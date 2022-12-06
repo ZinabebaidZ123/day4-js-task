@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+
+    <style>
+      .form input{
+        width: 50%;
+        outline: none;
+        margin: 10px ;
+       }
+       .errNameAlert{
+        display: none;
+        background-color: rgb(248, 231, 231);
+        color: rgb(129, 59, 59);
+        padding: 5px;
+        margin-top: 0;
+        width: 50%;
+       }
+       .errPassAlert{
+        display: none;
+        background-color: rgb(248, 231, 231);
+        color: rgb(129, 59, 59);
+        padding: 5px;
+        margin-top: 0;
+        width: 50%;
+       }
+       .errRePassAlert{
+        display: none;
+        background-color: rgb(248, 231, 231);
+        color: rgb(129, 59, 59);
+        padding: 5px;
+        margin-top: 0;
+        width: 50%;
+       }
+       .successRegs{
+        display: none;
+        background-color: rgb(214, 250, 214);
+        color:rgb(6, 53, 6);
+        padding: 5px;
+        margin : auto;
+        width: 50%;
+       }
+       .p-style{
+        padding: 10px;
+        border: 2px solid #f00;
+        margin-top: 30px;
+       }
+    
+       .container{
+        margin: auto;
+        width: 50%;
+       }
+
+  
+
+    </style>
+</head>
+<body>
+
+    <div class="form">
+  <form action="home.html">
+          <div class="name">
+              
+              <input type="text" placeholder="Enter your full name" class="make-border" onfocus="putInputBorder()"
+                onblur="returnBlackBorder()"   id = "nameInput">
+                <div class="errNameAlert" id="NameError"><p>Name must be mor than 3 characters</p></div>
+              
+          </div>
+          <hr>
+    
+          <div class="email">
+             
+              <input type="email" placeholder="Enter your email" id = "emailInput">
+              
+          </div>
+    <hr>
+          <div class="city">
+            
+               <select name="" id="">
+                  <option value="">Aswan</option>
+                  <option value="">Egypt</option>
+                  <option value="">Asuit</option>
+                  <option value="">Sohag</option>
+               </select>
+          </div>
+    <hr>
+          <div class="password">
+            
+              <input type="password" id="pass" placeholder="Enter your password" >
+              <div class="errPassAlert" id="passError"><p>please enter a password</p></div>
+        
+          </div>
+    <hr>
+          <div class="re-password">
+              
+              <input type="password" id="repass" placeholder="re write password" >
+              <div class="errRePassAlert" id="errorRePass"><p>password and a repassword must be identical
+                  
+              </p></div>
+          </div>
+    <hr>
+          <div class="checkbox">
+              <input type="checkbox"  ><label for="">I accept the terms and conditions</label>
+          </div>
+   <hr>
+          <div class="checkbox">
+              <input type="button" id="submit" value="submit" >
+              <div class="successRegs"  id="success"><p>You Are Succefully Registered</p></div>
+          </div>
+        </form>
+
+    </div>
+
+
+    <!-- q2 -->
+    <div class="imgs" id = "imgs">
+        
+     <h2 id="result"></h2>
+    </div>
+    <button id="btn">add image</button>
+
+  
+    <div class="p-style">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat consectetur provident ullam voluptas perspiciatis sit numquam quas necessitatibus, eius atque culpa dolor libero nemo tempora, laboriosam sed? Laborum, necessitatibus perspiciatis.</p>
+    </div>
+
+    <div class="font-family">
+        <h2>font family</h2>
+        <form action="">
+            <input type="radio" value = "hghj" name = "font-family">
+        </form>
+        
+    </div>
+
+    <hr>
+    <div class="slider">
+        <button id="nextBtn">Next</button>
+        <button id="slideShow">slide show</button>
+        <button id="stop">stop</button>
+        <button id="prevBtn">previous</button>
+        <hr>
+        <div class="img" style="margin: auto ; width:50%">
+            <img src="Image/girl4.jpg" alt="" width="300px" height="200px" id="slide-img">
+        </div>
+    </div>
+    <hr>
+    <div class="marebale container">
+        <img src="Image/move.jpg" alt="" id="move" style="position:relative ; display:none;left: 100px;top:100px">
+        <img src="Image/default.jpg" alt="" id="default">
+        <img src="Image/default.jpg" alt="" id="default">
+        <img src="Image/default.jpg" alt="" id="default">
+        
+        <!-- <img src="Image/move.jpg" alt="" id="move"> -->
+        
+    </div>
+
+
+ 
+    </div>
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src = "main4.js"></script>
+    
+</body>
+</html>

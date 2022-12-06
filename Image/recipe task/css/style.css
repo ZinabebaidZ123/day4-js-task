@@ -1,0 +1,15 @@
+.home{
+    background-image: url("../img/shutterstock_277750193.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.home .logo {
+    width: 4rem;
+}
+.navbar{
+    background-color: #d8bf02 !important;
+    
+}
+.content{
+   margin-top: 100px;
+}

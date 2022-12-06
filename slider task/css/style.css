@@ -1,0 +1,30 @@
+#smallBox
+{
+    background-image: url("../img/team-1.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    padding: 20px;
+}
+#fixedBox
+{
+    background-color: rgba(0, 0,0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+#closeBtn
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.caption
+{
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
